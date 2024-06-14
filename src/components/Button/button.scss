@@ -1,0 +1,28 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  line-height: 0.9;
+  padding: 10px 20px 9px;
+  font-weight: 700;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 2px solid #101010;
+
+  transition: all 300ms ease-in-out;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #101010;
+    color: #fafafa;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 10px;
+  }
+}
