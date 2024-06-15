@@ -22,6 +22,7 @@ export default function useScreenMobile({
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
