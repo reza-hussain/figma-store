@@ -1,0 +1,48 @@
+.footer {
+  --gap: 2.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: #ffc700;
+  gap: 2.5rem;
+  ul {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    animation: marquee linear infinite 12s;
+
+    span {
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-color: #fafafa;
+        border-radius: 50%;
+        position: absolute;
+
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: -1.8rem;
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}

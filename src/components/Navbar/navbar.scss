@@ -8,7 +8,6 @@
     width: 100%;
     height: 0px;
     transition: all 300ms ease-in-out;
-    border-bottom: 5px solid #101010;
 
     input {
       width: 100%;
@@ -26,6 +25,7 @@
   }
 
   &SearchActive {
+    border-bottom: 5px solid #101010;
     height: 85px;
   }
 

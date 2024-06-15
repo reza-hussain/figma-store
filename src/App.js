@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import "./App.css";
 import Carousel from "./components/Carousel";
 import ShoppingGrid from "./components/ShoppingGrid";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Carousel />
       <ShoppingGrid />
+      <Footer />
     </>
   );
 }

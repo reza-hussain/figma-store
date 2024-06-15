@@ -34,17 +34,15 @@ const Carousel = () => {
     <div className="carousel">
       <Splide options={splideOptions}>
         <SplideSlide>
-          <CloudShape />
-        </SplideSlide>
-
-        <SplideSlide>
           <Octagon />
         </SplideSlide>
 
         <SplideSlide>
           <HourGlassShape />
         </SplideSlide>
-
+        <SplideSlide>
+          <CloudShape />
+        </SplideSlide>
         <SplideSlide>
           <Ellipse />
         </SplideSlide>
