@@ -30,6 +30,8 @@ export default function useScreenMobile({
     } else {
       desktopFunc();
     }
+
+    // eslint-disable-next-line
   }, [isMobileView]);
 
   return isMobileView;
